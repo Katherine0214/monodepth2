@@ -1,5 +1,19 @@
 # Monodepth2
 
+## 💎 新增
+> 输入1张单目图片，即可生成对应的视差图；
+
+> 平视的（assets/test_image.jpg）视差效果不错，但是面向地面的（坑洼assets/1，2，3.jpg）视差效果非常不好。
+
+运行推理程序：
+```bash
+python test_simple.py --image_path assets/3.jpg --model_name mono+stereo_640x192 
+```
+
+
+
+---
+
 This is the reference PyTorch implementation for training and testing depth estimation models using the method described in
 
 > **Digging into Self-Supervised Monocular Depth Prediction**
